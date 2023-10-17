@@ -1,0 +1,146 @@
+/* Estilos generales para el contenedor del slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Estilos para el contenedor principal del slider */
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor principal cuando está enfocado */
+.slick-list:focus {
+    outline: none;
+}
+
+/* Estilos para el contenedor principal cuando se está arrastrando */
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* Transformaciones 3D para habilitar la animación del carrusel */
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Estilos para el contenedor de la pista de diapositivas */
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+/* Elementos de pseudocontenido antes y después de la pista de diapositivas */
+.slick-track:before, .slick-track:after {
+    display: table;
+    content: '';
+}
+
+/* Limpia los elementos flotantes dentro de la pista de diapositivas */
+.slick-track:after {
+    clear: both;
+}
+
+/* Oculta el contenedor de la pista cuando se está cargando */
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+/* Estilos generales para cada diapositiva */
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+/* Estilos para la dirección derecha a izquierda */
+[dir=rtl] .slick-slide {
+    float: right;
+}
+
+/* Estilos para imágenes dentro de las diapositivas */
+.slick-slide img {
+    display: block;
+}
+
+/* Oculta las imágenes dentro de las diapositivas mientras se cargan */
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+/* Desactiva la interacción del usuario con las imágenes cuando se arrastran las diapositivas */
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+/* Muestra las diapositivas una vez que el slider se ha inicializado */
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+/* Oculta las diapositivas mientras se carga el slider */
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+/* Estilos específicos para un slider vertical */
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/* Oculta las flechas de navegación del slider cuando no están activas o visibles */
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Estilos para la flecha "anterior" del slider */
+.slick-prev {
+    color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    background-image: url(/wp-content/themes/elmoro/img/left.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    left: 20px;
+}
+
+/* Estilos para la flecha "siguiente" del slider */
+.slick-next {
+    color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    background-image: url(/wp-content/themes/elmoro/img/right.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    right: 20px;
+}

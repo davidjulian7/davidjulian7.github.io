@@ -1,0 +1,640 @@
+/* Definición de fuentes personalizadas */
+@font-face {
+    font-display: swap;
+    font-family: "futuraLT_book";
+    src: url("/wp-content/themes/elmoro/fonts/futura-lt-book.ttf");
+}
+@font-face {
+    font-display: swap;
+    font-family: "curve";
+    src: url("/wp-content/themes/elmoro/fonts/LearningCurve.ttf");
+}
+@font-face {
+    font-display: swap;
+    font-family: "oksana";
+    src: url("/wp-content/themes/elmoro/fonts/LT_Oksana.ttf");
+}
+@font-face {
+    font-display: swap;
+    font-family: "oksanaBold";
+    src: url("/wp-content/themes/elmoro/fonts/LT_Oksana_Bold.ttf");
+}
+@font-face {
+    font-display: swap;
+    font-family: "sanchez";
+    src: url("/wp-content/themes/elmoro/fonts/Sanchez-Light.otf");
+}
+
+/* Estilos de márgenes y espaciado */
+.mtb3 {
+    margin: 30px 0;
+}
+.mb3 {
+    margin-bottom: 30px;
+}
+.mt3 {
+    margin-top: 30px;
+}
+
+/* Estilos para encabezados (h1) y su tamaño en dispositivos con ancho máximo de 900px */
+h1 {
+    font-size: 24px;
+    font-family: "oksana";
+}
+@media (max-width: 900px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para elementos de texto fuerte (strong) */
+strong {
+    font-weight: 700;
+}
+
+/* Clases para animación y opacidad */
+.onLoad, .onLoad.hide {
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 0;
+}
+.onLoad.hide {
+    opacity: 1;
+}
+
+/* Estilos para el título */
+.title {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+/* Línea punteada */
+.dotted_line {
+    width: 100%;
+    height: 6px;
+    float: left;
+    background-image: linear-gradient(to right, #006cb6 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 7px 2px;
+    background-repeat: repeat-x;
+}
+
+/* Espaciado entre caracteres y su ajuste en dispositivos con ancho máximo de 550px */
+.spacing {
+    letter-spacing: 24px;
+}
+@media (max-width: 550px) {
+    .spacing {
+        letter-spacing: 7px;
+    }
+}
+
+/* Estilos para descripciones y enlaces en descripciones */
+.description {
+    float: left;
+    font-size: 16px;
+    font-family: "futuraLT_book";
+}
+.description a {
+    font-weight: 700;
+}
+
+/* Líneas divisoras */
+.separador {
+    width: 100%;
+    float: left;
+}
+.separador > div {
+    height: 1px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    background-color: #1b75ba;
+}
+.separador > div:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+/* Bloque de detalles y ajuste de imágenes */
+.bloque_detalle {
+    width: 100%;
+    float: left;
+}
+.bloque_detalle img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos generales para el cuerpo (body) de la página */
+body {
+    color: #006cb6;
+    background-color: #f1f1ea;
+}
+
+/* Estilos para el encabezado (header) y su logotipo */
+header {
+    width: 100%;
+    margin-top: 60px;
+}
+header a.logo-wrap {
+    display: block;
+    overflow: hidden;
+}
+
+header .logo {
+    background-image: url('/wp-content/themes/elmoro/img/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+}
+
+/* Menú de navegación */
+.menu {
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+}
+.menu ul {
+    float: left;
+    width: 100%;
+    font-size: 0;
+    font-family: "sanchez";
+    margin: 20px 0;
+}
+.menu ul li {
+    display: inline-block;
+    width: 20%;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+.menu ul li:nth-child(1) {
+    text-align: left;
+}
+.menu ul li:nth-last-child(1) {
+    text-align: right;
+}
+.menu ul li a {
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .menu ul li {
+        letter-spacing: 1px;
+    }
+    header {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 550px) {
+    .menu ul li {
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menu ul li:nth-child(1) {
+        text-align: center;
+    }
+    .menu ul li:nth-last-child(1) {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    header .logo {
+        background-image: url('/wp-content/themes/elmoro/img/logo2.svg');
+    }
+    .menu {
+        margin: 20px 0 30px;
+    }
+}
+
+/* Pie de página */
+footer {
+    margin-bottom: 60px;
+}
+footer .txt {
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+}
+footer .txt .line {
+    width: 33.3%;
+    float: left;
+    overflow: hidden;
+}
+footer .txt .line > div {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    background-color: #1b75ba;
+}
+footer .txt .line > div:nth-last-child(1) {
+    margin-bottom: 0;
+}
+footer .txt > .line:nth-child(1) > div:nth-child(2) {
+    margin-left: 40px;
+}
+footer .txt > .line:nth-child(3) > div:nth-child(2) {
+    margin-left: -40px;
+}
+footer .txt .info {
+    width: 33.3%;
+    font-family: "sanchez";
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    font-size: 12px;
+    letter-spacing: 10px;
+}
+footer .social {
+    float: left;
+    width: 100%;
+}
+footer .social .line:nth-child(3) {
+    text-align: right;
+}
+footer .social .line {
+    width: 25%;
+    float: left;
+}
+footer .social .line img {
+    width: 100%;
+    max-width: 133px;
+    height: auto;
+}
+footer .social ul.redes {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+footer .social ul.redes li {
+    float: left;
+    list-style: none;
+    width: 33%;
+}
+footer .social ul.redes li:nth-child(2) {
+    text-align: center;
+}
+footer .social ul.redes li:nth-child(3) {
+    text-align: right;
+}
+footer .footer_detail {
+    background-image: url('/wp-content/themes/elmoro/img/f_object2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+@media (max-width: 900px) {
+    footer .txt .info {
+        letter-spacing: 0;
+    }
+}
+@media (max-width: 550px) {
+    footer .footer_detail {
+        background-size: cover;
+    }
+    footer .social .line {
+        display: none;
+    }
+    footer .social ul.redes {
+        width: 100%;
+    }
+    footer .social ul.redes li:nth-child(1) {
+        text-align: right;
+    }
+    footer .social ul.redes li:nth-child(3) {
+        text-align: left;
+    }
+}
+
+/* Estilos específicos para algunas páginas */
+#historia .bloque_detalle {
+    display: none;
+}
+#menu .menu_title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-image: url('/wp-content/themes/elmoro/img/h_object2.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#menu .menu_title .title h1 {
+    font-size: 42px;
+    letter-spacing: 46px;
+}
+#menu .menu_title .title h1 span {
+    font-size: 46px;
+    font-family: "curve";
+    font-weight: 400;
+    letter-spacing: normal;
+    display: block;
+    margin-left: -37px;
+}
+#menu .menu_title > div {
+    width: 100%;
+    float: left;
+}
+#menu .menu_servicio h1 {
+    font-family: "oksanaBold";
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+#menu ul.menu_lista {
+    font-family: "sanchez";
+    float: left;
+    width: 100%;
+    margin: 30px 0;
+}
+#menu ul.menu_lista li {
+    display: inline-block;
+    width: 100%;
+}
+#menu ul.menu_lista li p {
+    width: 80%;
+    float: left;
+    line-height: 24px;
+}
+#menu ul.menu_lista li span {
+    width: 20%;
+    text-align: right;
+    float: left;
+}
+@media (max-width: 900px) {
+    #menu .menu_title {
+        background-image: none;
+    }
+    #menu .menu_title .title h1 {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+}
+@media (max-width: 550px) {
+    #menu .menu_title .title h1 {
+        letter-spacing: 10px;
+        margin-left: 0;
+    }
+}
+
+/* Estilos para la página de ubicación */
+#ubicacion .container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#ubicacion .bloque_ubicacion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#ubicacion .bloque_ubicacion .img img {
+    width: 100%;
+    height: auto;
+}
+#ubicacion .bloque_ubicacion .txt {
+    font-family: "futuraLT_book";
+    margin-top: 30px;
+}
+
+#ubicacion .bloque_ubicacion .txt h1 {
+    letter-spacing: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+#ubicacion .bloque_ubicacion .txt p {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+#ubicacion .bloque_ubicacion .txt a {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "curve";
+}
+@media (max-width: 900px) {
+    #ubicacion .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #ubicacion .bloque_ubicacion .txt h1 {
+        letter-spacing: 7px;
+    }
+}
+
+/* Estilos para la sección de contacto */
+.contact-wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.contact-wrap .txt {
+    display: table-cell;
+    height: 55vh;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.contact-wrap .txt h1 {
+    letter-spacing: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.contact-wrap .txt a {
+    font-family: "futuraLT_book";
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+/* Estilos para modales y máscaras */
+.modal_mask {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    max-width: 620px;
+    height: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.close_modal {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.close_modal > div {
+    height: 2px;
+    width: 30px;
+    background-color: #cbcbcb;
+}
+.close_modal > div:nth-child(1) {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+}
+close_modal > div:nth-child(2) {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 7px;
+}
+.modal_mask.show_modal {
+    z-index: 1;
+    display: block;
+    opacity: 1;
+    position: fixed;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.modal_mapa {
+    overflow: hidden;
+    margin: 30px;
+}
+@media (max-width: 900px) {
+    .modal {
+        top: 5%;
+    }
+}
+@media (max-width: 400px) {
+    .modal_mapa {
+        height: 300px;
+    }
+    .close_modal {
+        float: inherit;
+        width: 100%;
+    }
+}
+
+/* Estilos para sliders de imágenes */
+.slider {
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 640px) {
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 640px) {
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+li.slick-slide .bg-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-bottom: 60%;
+    width: 100%;
+}
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+.rslides_nav {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.rslides_nav.next {
+    background-image: url('/wp-content/themes/elmoro/img/left.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    left: 20px;
+}
+.rslides_nav.prev {
+    background-image: url('/wp-content/themes/elmoro/img/right.png');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    right: 20px;
+}
+.slider:hover .rslides_nav {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para página de error 404 */
+.error-404, .error-404 h1 {
+    text-align: center;
+    font-family: "futuraLT_book";
+}
+.error-404 .screen-reader-text {
+    display: none;
+}
